@@ -1,0 +1,295 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Blog</title>
+    <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+
+  <style amp-custom>
+    html {
+     overflow: scroll;
+}
+    body { position: absolute; }
+    .hamburger {
+    padding: 12px;
+    float: right;
+    color:white;
+    font-size: 28px;
+}
+.sidebar {
+  padding: 10px;
+  margin-top:16px;  
+}
+.sidebar > li {
+  list-style: none;
+  margin-bottom:10px;
+  padding:8px;
+}
+.amp-sidebar{
+ background-color:#fe8c50;
+  width:40%;
+  color:white;
+}
+.close-sidebar {
+  font-size: 1.5em;
+  padding-right:8px;
+  float:right;
+}
+    a {
+      color:white;
+      text-decoration:none;
+    }
+    .headerbar{
+    position:fixed;
+    top: 0;
+    z-index:2;
+    height:80px;
+    background-color:#fe8c50;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    }
+    .site-name{
+    display: inline-block;
+    color:white;
+    margin-left: 8%;
+    }
+    .content{
+    height: 100%;
+    color: black;
+    border-style: ridge;
+    color: grey;
+    padding: 8px;
+    margin: 8px;
+    width: 70%;
+}
+.footer{
+  text-align: center;
+    padding: 8px;
+        height: 30%;
+        width: 100%;
+        background-color: rgb(80, 77, 77);
+    }
+    .info{
+        width: 95%;
+        height: 80%;
+    }
+    .contact{
+        width: 95%;
+        height: 80%;
+    }
+    .title{
+      margin:0px;
+      padding:0px;
+        font-size: 42px;
+        color: white;
+    }
+    .content{
+      width:90%;
+      font-size: 14px;
+      margin-bottom:16px;
+      padding-top: 0px;
+      margin-top: 0px;
+    }
+    .data{
+      padding:0px;
+      margin:0px;
+        color: white;
+        font-size: 14px;
+    }
+    .main{
+      padding-top: 0px;
+      margin-top: 0px;
+    }
+
+    .top{
+      margin-top:50px;
+      padding-top: 8px;
+      padding-left: 16px;
+      padding-bottom: 0px;
+      color: #000;
+      font-size: 28px;
+    }
+    .end{
+      color:white;
+      font-size:10px;
+    }
+    #title,#date,#content{
+      padding:2px;
+      margin:2px;
+      color:black;
+    }
+    .info{
+      text-align: center;
+    }
+    .grey {
+      background-color: rgb(238, 237, 237);
+      width: 100%;
+      height: 120px;
+      align-content: center;
+      text-align: center;
+    }
+    button{
+      margin-top: 40px;
+      align-content: center;
+      background-color: transparent;
+      border-color: #fe8c50;
+      color: #fe8c50;
+      height: 30px;
+      border-radius: 4px;
+    }
+    </style>
+  </head>
+  <body>
+    <header class="headerbar">
+        <div class="site-name"><h1>Botsfolio</h1></div>
+  <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger" >☰</div>
+
+</header>
+  <amp-sidebar id="sidebar1" layout="nodisplay" side="right" class="amp-sidebar">
+  <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕</div>
+  <ul class="sidebar">
+    <li><a href="#">Telegram</a></li>
+    <li><a href="#">Pricing</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">FAQ</a></li>
+    <li><a href="#">Login</a></li>
+  </ul>
+  
+</amp-sidebar>
+<div class="top">
+  <h1>Botsfolio</h1>
+</div>
+<div class="main">
+<div class="content"  >
+        <h1 id="title">
+          Tips to Earn Bitcoins: 6 Tried-and-True Methods
+        </h1>
+        <h6 id ="date">
+          01/27/2021
+        </h6>
+        <p id="content">   
+          If you want something valuable, you need to put in the work to earn it -- or spend money to buy it. This timeless notion also applies for getting bitcoins. If you want to get a substantial amount of bitcoins fast, you need to spend some money and buy them. If you want to get a substantial amount of bitcoins for free, you need to spend time in earning them on websites called bitcoin faucets.</p>
+        <amp-img src="https://botsfolio.com/static/news/Tips_to_earn_bitcoins.png"  layout="responsive" width="400" height="200" id="image" >              
+        </amp-img>
+        <p class="info">undefined</p>
+        <p class="info">Tips to Earn Bitcoins: 6 Tried-and-True Methods</p>
+        <p id="content">Spending in the form of monetary or mental resources to get bitcoins is must. But some methods of buying and earning bitcoins are more effective than others.</p>
+        <p id="content">There are two ways you can get bitcoins:</h4>
+        <p id="content">Quickly purchase a substantial amount of bitcoins through the internet or in person. Slowly earn a substantial amount of bitcoins for free through bitcoin faucets, like playing mobile or online games, completing tasks on websites, or writing about cryptocurrency.</p>
+        <h4 id="content">How to Get Bitcoins Fast</h4>
+        <h4 id="content">1. Buy Bitcoins Online</h4>
+        <p id="content">To buy or earn free bitcoins, you first need to download a bitcoin wallet, which is a software that allows you to securely send, receive, and store funds in the bitcoin network. There are four types of bitcoin wallets that you can use: mobile, web, desktop, and hardware.</p>
+        <p id="content">After downloading the wallet, you need to set up an account on a cryptocurrency exchange which is approved by your wallet provider. Cryptocurrency exchanges are market places where sellers trade cryptocurrencies to buyers in exchange for fiat money or other digital currencies.</p>
+        <p id="content">Most exchanges accept bank transfer or credit card payments, and some even accept Paypal payments. A small amount of transaction fee will be charged for every trade you make. You can choose from hundreds of crypto exchanges.</p>
+        <p id="content">Here is a list of few exchanges where you can buy Bitcoins online:</p>
+        <ol>
+          <li>Binance</li>
+          <li>Coinbase</li>
+          <li>Coinmama</li>
+          <li>eToro</li>
+          <li>Gemini</li>
+        </ol>
+        <h4 id="content">2. Buy Bitcoins in Person</h4>
+        <p id="content">If you’d rather buy bitcoins in person, you have four options to choose from: • Use websites like Coin ATM Radar to help you find a Bitcoin ATM, which works very similarly to a regular ATM, except you trade your cash for bitcoin. • Use websites like LibertyX to find retail stores across the United States that will give you bitcoin in exchange for cash. • Use websites like Paxful to find bank branches that will give you bitcoin in exchange for cash deposits. • Use websites like LocalBitcoins to find people who are willing to exchange Bitcoin for cash, in person. •</p>
+        <h4 id="content">How to Get Bitcoins for Free</h4>
+        <h4 id="content">1. Play Mobile or Online Games to Earn Bitcoins</h4>
+        <p id="content">One of the most entertaining and fun ways to earn free bitcoins is by playing on mobile or online games. That’s right -- you can play games on your phone or computer to get paid in bitcoin. But if these bitcoin faucets want to make money and pay their players, they have to serve a lot of advertisements to their users.</p>
+        <p id="content">To avoid the ads, you can join a bitcoin casino, where you bet your own money or bitcoin on traditional casino games, sports matches, and lotteries to potentially win a higher payout in bitcoin.</p>
+        <h4 id="content">List of few bitcoin games you can play and earn Bitcoins are:</h4>
+        <ul>
+          <li>Bitcoin Food Fight</li>
+          <li>Blockchain Game</li>
+          <li>Bitcoin Solitaire</li>
+          <li>Bitcoin Billionaire</li>
+          <li>Free Bitcoin</li>
+        </ul>
+        <h4 id="content">2. Do Task Jobs Online to Earn Bitcoins
+        </h4>
+        <p id="content">Another way to earn free bitcoins is by completing tasks on websites. Some companies will pay you in Bitcoin to test their web sites, take their surveys, retweet their posts, and complete other small tasks.</p>
+        <div class="grey">
+          <button> Get Started</button>
+          <p>Use automated crypto trading strategies</p>
+        </div>
+        <p id="content">There are also websites that let people offer small bitcoin rewards to the person who can give them the best answer to one of their questions.</p>
+        <p id="content">Popular bitcoin micro tasks sites and apps include BitcoinGet, BitcoinReward, Bituro</p>
+        <h4 id="content">3. Read Classic Books to Earn Bitcoins
+        </h4>
+        <p id="content">Paying people to play simple games and complete repetitive jobs sounds like a great way of attracting a lot of users and, in turn, tons of advertisers. But there are hundreds of bitcoin faucets competing for users and advertisers making it hard to stand out from the crowd.</p>
+        <p id="content">Users also don’t rely on faucets as a main source of income, so, a lot of the time, a small bitcoin reward isn’t enough to coax them into doing boring tasks during their free time.</p>
+        <p id="content">To generate more user activity and advertising revenue, some bitcoin faucets pay people to read. Their service, PaidBooks, compensates people in Bitcoin to read classic books like Pride & Prejudice, War of the Worlds, and over 600 other titles on their website.</p>
+        <h4 id="content">List of few bitcoin faucets:
+        </h4>
+        <ul>
+          <li>Bonus Bitcoin</li>
+          <li>Bitcoinker</li>
+          <li>Free Bitcoin</li>
+          <li>Bitcoin Aliens</li>
+          <li>Cointiply</li>
+        </ul>
+        <h4 id="content">4. Write About Cryptocurrency to Earn Bitcoins</h4>
+        <p id="content">There are certain cryptocurrency blogs, news outlets, and forums that pay you in bitcoin to contribute your insights and write for them, if you have a lot of knowledge about the industry.</p>
+        <p id="content">As the advertisers usually want to partner with top-ranked members, and since the forum increases its members’ rank based on their activity, the only way you can increase your rank and earn free bitcoins is by providing a high quantity of high quality posts.</p>
+        <h4 id="content">List of few places where you can earn bitcoin by writing:</h4>
+        <ul>
+          <li>PublishOx</li>
+          <li>Steemit</li>
+          <li>Coincircle</li>
+          <li>BountyOx</li>
+          <li>Crowdholding</li>
+        </ul>
+  </div>
+</div>
+  <div class="footer">
+    <div class="info">
+        <h1 class="title" >Botsfolio</h1>
+        <p class="content">With any investment, your capital is at risk. The value of your portfolio with Botsfolio can go down as well as up and you may get back less than you invest. Past performance is no guarantee of future results. Read our (investment risk disclosure) for more information. By using this website, you accept our (Privacy Policy)</p>
+    </div>
+    <div class="contact">
+        <p class="data">
+            Contact us
+        </p>
+        <p class="data">
+            jasmine@botsfolio.com
+            KribX Inc. , USA</p>
+            <amp-social-share
+            type="facebook"
+            aria-label="Share on facebook"
+            class="social"
+            width="30"
+            height="30"
+            ></amp-social-share>
+            <amp-social-share
+            type="twitter"
+            aria-label="Share on Twitter"
+            class="social"
+            width="30"
+            height="30"
+            ></amp-social-share>
+      <amp-social-share
+            type="linkedin"
+            aria-label="Share on linkedin"
+            class="social"
+            width="30"
+            height="30"
+            ></amp-social-share>
+    </div>
+    <p class="end">
+      © 2020 Botsfolio
+    </p>
+</div>
+  </body>
+</html>
+
+
+

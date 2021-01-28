@@ -1,0 +1,47 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta
+    name="amp-script-src"
+    content="sha384-YCFs8k-ouELcBTgzKzNAujZFxygwiqimSqKK7JqeKaGNflwDxaC3g2toj7s_kxWG"
+  />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Content</title>
+    <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+    <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
+<style amp-custom>
+.content{
+    height: 100%;
+    color: black;
+    border-style: ridge;
+    padding: 8px;
+    margin: 8px;
+    width: 70%;
+}
+</style>
+  </head>
+  <body>
+    <div class="content"  >
+      <amp-script script="data">
+          <h1 id="title">
+          </h1>
+          <h6 id ="date">
+          </h6>
+          <h4 id="content">              
+          </h4>
+          <amp-img  layout="responsive" width="400" height="200" id="image" >              
+          </amp-img>
+      </amp-script>
+    </div>
+      <script id="data" type="text/javascript" target="amp-script">
+        document.getElementById("title").innerHTML="Title";
+        document.getElementById("date").innerHTML="23 jan 2021";
+        document.getElementById("content").innerHTML="In the words of Ripple, Inc RippleNet is the most advanced blockchain technology for global payments—making it easy for financial institutions to reach a trusted, growing network of 300+ providers across 40+ countries and Six continents.RippleNet works by potentially hosting multiple potential assets of value. The network hosts an On-Demand Liquidity mechanism, which allows the transfer of values and exchanges across the world.";
+        document.getElementById("image").src="/static/news/how.png";
+        </script>
+  </body>
+</html>

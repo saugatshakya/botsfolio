@@ -1,0 +1,263 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Blog</title>
+    <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+
+  <style amp-custom>
+    html {
+     overflow: scroll;
+}
+    body { position: absolute; }
+    .hamburger {
+    padding: 12px;
+    float: right;
+    color:white;
+    font-size: 28px;
+}
+.sidebar {
+  padding: 10px;
+  margin-top:16px;  
+}
+.sidebar > li {
+  list-style: none;
+  margin-bottom:10px;
+  padding:8px;
+}
+.amp-sidebar{
+ background-color:#fe8c50;
+  width:40%;
+  color:white;
+}
+.close-sidebar {
+  font-size: 1.5em;
+  padding-right:8px;
+  float:right;
+}
+    a {
+      color:white;
+      text-decoration:none;
+    }
+    .headerbar{
+    position:fixed;
+    top: 0;
+    z-index:2;
+    height:80px;
+    background-color:#fe8c50;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    }
+    .site-name{
+    display: inline-block;
+    color:white;
+    margin-left: 8%;
+    }
+    .content{
+    height: 100%;
+    color: black;
+    border-style: ridge;
+    color: grey;
+    padding: 8px;
+    margin: 8px;
+    width: 70%;
+}
+.footer{
+  text-align: center;
+    padding: 8px;
+        height: 30%;
+        width: 100%;
+        background-color: rgb(80, 77, 77);
+    }
+    .info{
+        width: 95%;
+        height: 80%;
+    }
+    .contact{
+        width: 95%;
+        height: 80%;
+    }
+    .title{
+      margin:0px;
+      padding:0px;
+        font-size: 42px;
+        color: white;
+    }
+    .content{
+      width:90%;
+      font-size: 14px;
+      margin-bottom:16px;
+      padding-top: 0px;
+      margin-top: 0px;
+    }
+    .data{
+      padding:0px;
+      margin:0px;
+        color: white;
+        font-size: 14px;
+    }
+    .main{
+      padding-top: 0px;
+      margin-top: 0px;
+    }
+
+    .top{
+      margin-top:50px;
+      padding-top: 8px;
+      padding-left: 16px;
+      padding-bottom: 0px;
+      color: #000;
+      font-size: 28px;
+    }
+    .end{
+      color:white;
+      font-size:10px;
+    }
+    #title,#date,#content{
+      padding:2px;
+      margin:2px;
+      color:black;
+    }
+    button{
+      margin: 8px;
+      background-color: transparent;
+      border-color: #fe8c50;
+      color: #fe8c50;
+      height: 30px;
+      border-radius: 4px;
+    }
+    </style>
+  </head>
+  <body>
+    <header class="headerbar">
+        <div class="site-name"><h1>Botsfolio</h1></div>
+  <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger" >☰</div>
+
+</header>
+  <amp-sidebar id="sidebar1" layout="nodisplay" side="right" class="amp-sidebar">
+  <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕</div>
+  <ul class="sidebar">
+    <li><a href="#">Telegram</a></li>
+    <li><a href="#">Pricing</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">FAQ</a></li>
+    <li><a href="#">Login</a></li>
+  </ul>
+  
+</amp-sidebar>
+<div class="top">
+  <h1>Botsfolio</h1>
+</div>
+<div class="main">
+  <div class="content"  >
+    <h1 id="title">
+      Tips to Earn Bitcoins: 6 Tried-and-True Methods
+    </h1>
+    <h6 id ="date">
+      27 Jan 2021
+    </h6>
+    <h4 id="content">   
+      If you want something valuable, you need to put in the work to earn it -- or spend money to buy it. This timeless notion also applies for getting bitcoins. If you want to get a substantial amount of bitcoins fast, you need to spend some money ...    </h4>
+      <a href="blog_detail.html"><button >Read More</button></a>
+      <amp-img src="https://botsfolio.com/static/news/Tips_to_earn_bitcoins.png"  layout="responsive" width="400" height="200" id="image" >              
+    </amp-img>
+    
+</div>
+<div class="content"  >
+        <h1 id="title">
+          RIPPLE XRP: THE COMPLETE GUIDE
+        </h1>
+        <h6 id ="date">
+          23 Jan 2021
+        </h6>
+        <h4 id="content">   
+          What is Ripple? This has been the most prominent name within the cryptocurrency space. In short, Ripple is a payment protocol that facilitates fast, frictionless cross-border payments with minimal fees. This payment protocol also hosts its native ass
+        </h4>
+        <a href="blog_detail.html"><button >Read More</button></a>
+        <amp-img src="https://botsfolio.com/static/news/RIPPLE_XRP__THE_COMPLETE_GUIDE.png"  layout="responsive" width="400" height="200" id="image" >              
+        </amp-img>
+        
+  </div>
+  <div class="content"  >
+    <h1 id="title">
+      BITCOIN VS ETHEREUM, WHICH IS BETTER? WHAT ARE THEIR ALTERNATIVES?
+    </h1>
+    <h6 id ="date">
+      23 Jan 2021
+    </h6>
+    <h4 id="content">   
+      Both Bitcoin and Ethereum are the most widely discussed cryptocurrencies, especially after the unparalleled bull run at the end of 2017 launched prices to unseen heights. While Bitcoin and Ethereum are among the leading and most popular cryptocurrenc    </h4>
+      <a href="blog_detail.html"><button >Read More</button></a>
+      <amp-img src="https://botsfolio.com/static/news/BITCOIN_VS_ETHEREUM_WHICH_IS_BETTER_WHAT_ARE_THEIR_ALTERNATIVES.png"  layout="responsive" width="400" height="200" id="image" >              
+    </amp-img>
+    
+</div>
+    <div class="content">
+        <h1 id="title">
+          Bitcoin Mining        
+      </h1>
+        <h6 id ="date">
+          23 Jan 2021
+        </h6>
+        <h4 id="content">
+          Bitcoin mining is a term that everyone in the cryptocurrency and even many outsiders are very familiar with. Bitcoin Mining is the process performed by high-powered computers (also known as nodes), which solve complicated computational math problems.        </h4>
+          <a href="blog_detail.html"><button >Read More</button></a>
+          <amp-img src="https://botsfolio.com/static/news/Bitcoin_Mining.png"  layout="responsive" width="400" height="200" id="image" >              
+        </amp-img>
+        
+  </div>
+</div>
+  <div class="footer">
+    <div class="info">
+        <h1 class="title" >Botsfolio</h1>
+        <p class="content">With any investment, your capital is at risk. The value of your portfolio with Botsfolio can go down as well as up and you may get back less than you invest. Past performance is no guarantee of future results. Read our (investment risk disclosure) for more information. By using this website, you accept our (Privacy Policy)</p>
+    </div>
+    <div class="contact">
+        <p class="data">
+            Contact us
+        </p>
+        <p class="data">
+            jasmine@botsfolio.com
+            KribX Inc. , USA</p>
+            <amp-social-share
+            type="facebook"
+            aria-label="Share on facebook"
+            class="social"
+            width="30"
+            height="30"
+            ></amp-social-share>
+            <amp-social-share
+            type="twitter"
+            aria-label="Share on Twitter"
+            class="social"
+            width="30"
+            height="30"
+            ></amp-social-share>
+      <amp-social-share
+            type="linkedin"
+            aria-label="Share on linkedin"
+            class="social"
+            width="30"
+            height="30"
+            ></amp-social-share>
+    </div>
+    <p class="end">
+      © 2020 Botsfolio
+    </p>
+</div>
+  </body>
+</html>
+
+
+
